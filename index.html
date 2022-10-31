@@ -4,23 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/flores.png" />
+  <link rel="icon" href="assets/password.ico" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Generador de contraseñas</title>
 </head>
 <body>
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    <header>
+        <h1 class="titulo-contraseña">
+          Password Generator
+          <i class="fa-solid fa-robot" style="color: rgb(124, 105, 19)"></i>
+        </h1>
+      </header>
+      <section>
+        <main>
+          <div class="primer-caja">
+            <div class="primer-caja-interna">
+              <form id="generar-contraseña">
+                <input
+                  class="input-password"
+                  type="text"
+                  id="password"
+                  value=""
+                />
+              </form>
+              <button class="btn-copia" id="btn-copia" name="button">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              <button
+                class="btn-generar"
+                id="btn-generar"
+                name="button"
+                value="button"
+              >
+                <i class="fa-sharp fa-solid fa-rotate"></i>
+              </button>
+            </div>
+          </div>
+  
+          <div class="segunda-caja">
+            <h3 class="caja-titulo">Personalice su contraseña</h3>
+            <div class="caja-check-grande">
+              <div class="caja-longitud">
+                <h4>Longitud</h4>
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-doce"
+                    value="12"
+                    name="radio-longitud"
+                  />
+                  <label for="input-doce"> 12 caracteres </label>
+                </div>
+  
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-nueve"
+                    value="text"
+                    name="radio-longitud"
+                  />
+                  <label for="input-nueve"> 9 caracteres </label>
+                </div>
+  
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-seis"
+                    value="text"
+                    name="radio-longitud"
+                  />
+                  <label for="input-seis"> 6 caracteres </label>
+                </div>
+              </div>
+  
+              <div class="caja-reglas">
+                <h4>Reglas</h4>
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-letras"
+                    value="text"
+                    name="regla"
+                  />
+                  <label for="input-letras"> Solo letras </label>
+                </div>
+  
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-solo-numeros"
+                    value=""
+                    name="regla"
+                  />
+                  <label for="input-solo-numeros"> Solo numeros </label>
+                </div>
+  
+                <div class="caja-check">
+                  <input
+                    type="radio"
+                    id="input-caracteres"
+                    value=""
+                    name="regla"
+                  />
+                  <label for="input-caracteres"> Todos los caracteres </label>
+                </div>
+              </div>
+  
+              <div class="caja-caracteres">
+                <h4>Caracteres</h4>
+                <div class="caja-check">
+                  <input
+                    type="checkbox"
+                    id="check-mayuscula"
+                    name="mayusculas"
+                    value="text"
+                  />
+                  <label for="check-mayuscula"> Mayúsculas </label>
+                </div>
+                <div class="caja-check">
+                  <input
+                    type="checkbox"
+                    value="text"
+                    id="check-minuscula"
+                    name="minusculas"
+                  />
+                  <label for="check-minuscula"> Misnúsculas </label>
+                </div>
+                <div class="caja-check">
+                  <input
+                    type="checkbox"
+                    value="number"
+                    id="check-numeros"
+                    name="numeros"
+                  />
+                  <label for="check-numeros"> Números </label>
+                </div>
+  
+                <div class="caja-check">
+                  <input
+                    type="checkbox"
+                    value="number"
+                    id="check-simbolos"
+                    name="simbolos"
+                  />
+                  <label for="check-simbolos"> Símbolos </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
    <script src="js/scrip.js"></script> 
 </body>
 </html>

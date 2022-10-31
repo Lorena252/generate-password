@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(../assets/flores.png);
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main {
+    margin-top: 60px;
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(17, 94, 30);
+  }
+  
+  header {
+    text-align: center;
+    padding-top: 25px;
+    color: rgb(124, 105, 19);
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: 1px 10px 7px rgb(19, 131, 67);
+  }
+  
+  .primer-caja {
+    width: 500px;
+    height: 100px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(219, 172, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -9px 15px -5px rgb(19, 131, 67);
+  }
+  
+  .primer-caja-interna {
+    background-color: rgb(219, 172, 43);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+  }
+  
+  .input-password {
+    margin-top: 25px;
+    margin-right: 15px;
+    width: 280px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    border-color: rgb(51, 201, 108);
+  }
+  .input-password:hover,
+  input::after {
+    box-shadow: 1px 1px 35px 5px rgb(19, 131, 67);
+  }
+  
+  .btn-generar,
+  .btn-copia {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    margin-top: 25px;
+    margin-right: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn-generar:hover,
+  .btn-copia:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 35px 5px rgb(19, 131, 67);
+  }
+  
+  h4 {
+    color: rgb(27, 49, 4);
+    padding-bottom: 10px;
+  }
+  
+  .caja-titulo {
+    color: rgb(9, 39, 15);
+    font-size: x-large;
+    font-weight: 900;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 10px;
+    text-shadow: 8px 5px 10px rgb(17, 99, 52);
+  }
+  
+  .caja-check-grande {
+    width: 500px;
+    height: 180px;
+    background-color: rgb(219, 172, 43);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 25px;
+    box-shadow: 5px 9px 15px -5px rgb(19, 131, 67);
+  }
+  
+  .segunda-caja {
+    background-color: rgb(219, 172, 43);
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    main {
+      width: 300px;
+      display: block;
+      margin: 90px 20px 20px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    header {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    .primer-caja {
+      width: 300px;
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    .input-password {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    h4 {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    .caja-check-grande {
+      width: 200px;
+      display: block;
+      box-shadow: none;
+      align-items: center;
+      margin-inline-start: 35px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px) {
+    .segunda-caja {
+      width: 300px;
+      display: block;
+      height: 500px;
+    }
+  }
+  
